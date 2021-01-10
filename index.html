@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/abd2e7e1fe.js" crossorigin="anonymous"></script>
+        <title>University Village</title>
+    </head>
+    
+    <body>
+        <!-- create navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+            <a class="navbar-brand" href="index.html" style="letter-spacing: 4px;">
+                <img src="logo.png" height="42" width="130" alt="CoolBrand">
+            </a>
+            <!-- create hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- create all items in that hamburger -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- some nav items (same pages) -->
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <!-- language dropdown menu -->
+                    <li class="nav-item dropdown lang-item">
+                        <a class="nav-link drop-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Eng <i class="fas fa-angle-down fa-lg"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn languages-div" aria-labelledby="navbarDropdown" style="padding: 0;">
+                            <a class="dropdown-item" href="index.html">English</a>
+                            <a class="dropdown-item" href="index1.html">Arabic</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+        <section>
+            <div id="my-carousel" class="container-fluid no-padding">
+                <div class="col-lg-12 no-padding">
+                    <div id="index-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#index-carousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&   =753&q=80" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <h1>University Village</h1>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1470093790102-5aea19caf968?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <h1>University Village</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#index-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us -->
+        <div id="about"></div>
+        <section>
+            <div class="container first-section">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 text-center">
+                        <h1>Who We Are</h1>
+                    </div>              
+                </div>
+            </div>
+            <div class="container-fluid second-section">
+                <div class="row align-items-center px-lg-5">
+                    <div class="col-sm-12 col-md-6 mb-sm-4">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80" class="img-fluid">
+                    </div>
+                    <div class="col-sm-12 col-md-6 second-col">
+                        <h2 style="color: #666;">Build a slick, modern sites faster than ever</h2>
+                        <p>University Village is your complete design toolkit, built from the ground up to be flexible, extensible and stylish. Building slick, contemporary sites has never been this easy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <div id="location"></div>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.061739899898!2d43.99459211000991!3d36.23799415640924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40071f37d65a6041%3A0x9a549d08e0652b3b!2sMaxi%20Mall%20Outlet!5e0!3m2!1sen!2siq!4v1594056533676!5m2!1sen!2siq" frameborder="0" style="border-top:1px solid #FFF;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+        <!-- Contact Us -->
+        <div id="contact"></div>
+        <section>
+            <div class="container-fluid contact-form">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h3>GET IN TOUCH</h3>
+                            <p>Feel free to contact us any time you want and we will answer as soon as possible</p>
+                            <hr>
+                            <p>438 Marine Parade</p>
+                            <p>Elwood, Victoria</p>
+                            <p>P.O Box 3184</p>
+                            <hr>
+                            <p>P1: +964 750 466 1163</p>
+                            <p>P2: +964 751 466 1163</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 second-col">
+                            <div class="form" style="width: 100%;">
+                                <input type="text" class="d-block" placeholder="Name">
+                                <input type="email" class="d-block" placeholder="Email">
+                                <textarea rows="3" class="d-block" placeholder="Your message here..."></textarea>
+                                <button>Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row second-row">
+                    <div class="col-sm-6">
+                        <p style="color: gray">designed by</p>
+                    </div>
+                    <div class="col-sm-6 four-icons">
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f mx-2"></i>
+                            <i class="fab fa-vimeo-v"></i>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <button id="top-button">top</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
